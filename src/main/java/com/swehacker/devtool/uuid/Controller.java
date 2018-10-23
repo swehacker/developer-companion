@@ -11,6 +11,7 @@ public class Controller {
   TextField uuidToken;
 
 
+  @SuppressWarnings("squid:S1172")
   public void generateToken(ActionEvent actionEvent) {
     uuidToken.setText(UUID.randomUUID().toString());
   }
