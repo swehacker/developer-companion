@@ -1,0 +1,23 @@
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+<GridPane fx:controller="com.swehacker.devtool.jwt.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" stylesheets="@main.css">
+  <padding>
+    <Insets bottom="10" left="10" right="10" top="10" />
+  </padding>
+  <VBox spacing="5.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+    <padding>
+      <Insets bottom="10" left="0" right="0" top="10" />
+    </padding>
+    <Label styleClass="h1">Json Web Token</Label>
+    <Label>Token</Label>
+    <TextArea fx:id="jwtToken" onKeyReleased="#onTokenPasted" wrapText="true" />
+    <Label>Algorithm</Label>
+    <TextField fx:id="algToken" VBox.vgrow="ALWAYS" editable="false" />
+    <Label>Decrypted Info</Label>
+    <TextArea fx:id="decodedToken" VBox.vgrow="ALWAYS" editable="false" wrapText="true" />
+  </VBox>
+</GridPane>

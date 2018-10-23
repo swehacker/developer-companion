@@ -1,0 +1,10 @@
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<TabPane>
+  <Tab text="UUID Generator" closable="false">
+    <fx:include source="uuid.fxml" xmlns:fx="http://javafx.com/fxml" />
+  </Tab>
+  <Tab text="Json Web Token" closable="false">
+    <fx:include source="jwt.fxml" xmlns:fx="http://javafx.com/fxml" />
+  </Tab>
+</TabPane>
