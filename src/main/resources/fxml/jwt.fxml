@@ -12,7 +12,6 @@
     <padding>
       <Insets bottom="10" top="10" />
     </padding>
-    <Label styleClass="h1">Json Web Token</Label>
     <Label>Token</Label>
     <TextArea fx:id="jwtToken" onKeyReleased="#onTokenPasted" wrapText="true" />
     <Label>Algorithm</Label>

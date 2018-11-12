@@ -4,7 +4,10 @@
   <Tab text="UUID Generator" closable="false">
     <fx:include source="uuid.fxml" xmlns:fx="http://javafx.com/fxml" />
   </Tab>
-  <Tab text="Json Web Token" closable="false">
+  <Tab text="Decode JWT" closable="false">
     <fx:include source="jwt.fxml" xmlns:fx="http://javafx.com/fxml" />
+  </Tab>
+  <Tab text="JSON Pretty Print" closable="false">
+    <fx:include source="jsonPrettyPrint.fxml" xmlns:fx="http://javafx.com/fxml" />
   </Tab>
 </TabPane>

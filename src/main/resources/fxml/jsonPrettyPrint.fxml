@@ -1,0 +1,19 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<GridPane fx:controller="com.swehacker.devtool.json.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" stylesheets="@main.css">
+  <padding>
+    <Insets bottom="10" left="10" right="10" top="10" />
+  </padding>
+  <VBox spacing="5.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+    <padding>
+      <Insets bottom="10" top="10" />
+    </padding>
+    <Label>JSON String:</Label>
+    <TextArea fx:id="uglyJson" onKeyReleased="#onJsonPasted" wrapText="true" />
+    <Label>Pretty Print JSON:</Label>
+    <TextArea fx:id="prettyJson" VBox.vgrow="ALWAYS" editable="false" wrapText="true" />
+  </VBox>
+</GridPane>
