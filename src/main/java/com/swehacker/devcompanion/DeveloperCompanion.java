@@ -21,7 +21,7 @@ public class DeveloperCompanion extends Application {
 
     Parent root = FXMLLoader.load(getClass().getResource("/fxml/main.fxml"));
     primaryStage.setScene(new Scene(root, 800, 600));
-    primaryStage.setTitle("Developer Tool");
+    primaryStage.setTitle("Developer Companion");
 
     Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
     primaryStage.setX((screenBounds.getWidth() - primaryStage.getScene().getWidth()) / 2);
