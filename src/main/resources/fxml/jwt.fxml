@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.geometry.Insets?>
-<GridPane fx:controller="com.swehacker.devtool.jwt.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" stylesheets="@main.css">
+<GridPane fx:controller="com.swehacker.devcompanion.jwt.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" stylesheets="@main.css">
   <padding>
     <Insets bottom="10" left="10" right="10" top="10" />
   </padding>

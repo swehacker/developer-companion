@@ -1,4 +1,4 @@
-package com.swehacker.devtool;
+package com.swehacker.devcompanion;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -9,7 +9,7 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class DeveloperTool extends Application {
+public class DeveloperCompanion extends Application {
 
   public static void main(String[] args) {
     Application.launch(args);

@@ -3,7 +3,7 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.VBox?>
-<GridPane fx:controller="com.swehacker.devtool.json.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" stylesheets="@main.css">
+<GridPane fx:controller="com.swehacker.devcompanion.json.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" stylesheets="@main.css">
   <padding>
     <Insets bottom="10" left="10" right="10" top="10" />
   </padding>

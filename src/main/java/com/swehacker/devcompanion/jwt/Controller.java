@@ -1,4 +1,4 @@
-package com.swehacker.devtool.jwt;
+package com.swehacker.devcompanion.jwt;
 
 import java.util.Base64;
 import javafx.fxml.FXML;

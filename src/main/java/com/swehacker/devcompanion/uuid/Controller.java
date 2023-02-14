@@ -1,4 +1,4 @@
-package com.swehacker.devtool.uuid;
+package com.swehacker.devcompanion.uuid;
 
 import java.util.UUID;
 import javafx.event.ActionEvent;

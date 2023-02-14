@@ -10,4 +10,7 @@
   <Tab text="JSON Pretty Print" closable="false">
     <fx:include source="jsonPrettyPrint.fxml" xmlns:fx="http://javafx.com/fxml" />
   </Tab>
+  <Tab text="JASYPT Encrypt/Decrypt" closable="false">
+    <fx:include source="jasypt.fxml" xmlns:fx="http://javafx.com/fxml" />
+  </Tab>
 </TabPane>

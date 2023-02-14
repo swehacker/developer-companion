@@ -5,8 +5,8 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<GridPane fx:controller="com.swehacker.devtool.uuid.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center"
-  hgap="10" vgap="10" stylesheets="@main.css">
+<GridPane fx:controller="com.swehacker.devcompanion.uuid.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center"
+          hgap="10" vgap="10" stylesheets="@main.css">
   <padding>
     <Insets bottom="10" left="10" right="10" top="10"/>
   </padding>
