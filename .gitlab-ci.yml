@@ -1,4 +1,4 @@
-image: mgoo2/openjfx
+image: gradle:7.6.0-jdk19-alpine
 
 stages:
   - build
