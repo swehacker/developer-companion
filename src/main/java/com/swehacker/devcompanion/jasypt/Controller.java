@@ -26,11 +26,15 @@ public class Controller {
   }
 
   public void decrypt(ActionEvent event) {
-    StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
-    encryptor.setPassword(password.getText());
-    encryptor.setAlgorithm("PBEWithHMACSHA512AndAES_256");
-    encryptor.setIvGenerator(new RandomIvGenerator());
+    try {
+      StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
+      encryptor.setPassword(password.getText());
+      encryptor.setAlgorithm("PBEWithHMACSHA512AndAES_256");
+      encryptor.setIvGenerator(new RandomIvGenerator());
 
-    result.setText(encryptor.decrypt(text.getText()));
+      result.setText(encryptor.decrypt(text.getText()));
+    } catch (Throwable t) {
+      result.setText("Error: Encryption not possible due to wrong password!");
+    }
   }
 }

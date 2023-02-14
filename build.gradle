@@ -94,6 +94,40 @@ task packagedeb (type: Exec) {
             "--copyright", "${copyright}"
 }
 
+task packageexe (type: Exec) {
+    dependsOn 'copyDependencies'
+
+    commandLine "jpackage",
+            "--input", "build/libs",
+            "--dest", "build/distributions/",
+            "--name", "${appName}",
+            "--main-jar", "${archiveFileName}",
+            "--main-class", "${mainClassName}",
+            "--type", "exe",
+            "--icon", "images/app.icns",
+            "--app-version", "${appVersion}",
+            "--description", "${appDescription}",
+            "--vendor", "${vendor}",
+            "--copyright", "${copyright}"
+}
+
+task packageappimage (type: Exec) {
+    dependsOn 'copyDependencies'
+
+    commandLine "jpackage",
+            "--input", "build/libs",
+            "--dest", "build/distributions/",
+            "--name", "${appName}",
+            "--main-jar", "${archiveFileName}",
+            "--main-class", "${mainClassName}",
+            "--type", "app-image",
+            "--icon", "images/app.icns",
+            "--app-version", "${appVersion}",
+            "--description", "${appDescription}",
+            "--vendor", "${vendor}",
+            "--copyright", "${copyright}"
+}
+
 def currentOS = org.gradle.internal.os.OperatingSystem.current()
 def platform
 if (currentOS.isWindows()) {
