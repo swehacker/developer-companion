@@ -111,6 +111,23 @@ task packageexe (type: Exec) {
             "--copyright", "${copyright}"
 }
 
+task packagemsi (type: Exec) {
+    dependsOn 'copyDependencies'
+
+    commandLine "jpackage",
+            "--input", "build/libs",
+            "--dest", "build/distributions/",
+            "--name", "${appName}",
+            "--main-jar", "${archiveFileName}",
+            "--main-class", "${mainClassName}",
+            "--type", "msi",
+            "--icon", "images/app.icns",
+            "--app-version", "${appVersion}",
+            "--description", "${appDescription}",
+            "--vendor", "${vendor}",
+            "--copyright", "${copyright}"
+}
+
 task packageappimage (type: Exec) {
     dependsOn 'copyDependencies'
 
