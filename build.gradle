@@ -5,12 +5,12 @@ plugins {
 }
 
 group 'com.swehacker'
-version '1.0-SNAPSHOT'
+version '1.2.0'
 mainClassName = 'com.swehacker.devcompanion.DeveloperCompanion'
 
 ext {
     appName = 'Developer Companion'
-    appVersion = '1.0.0'
+    appVersion = '1.2.0'
     vendor = 'Patrik Falk [Swehacker]'
     copyright = 'Copyright 2023, All rights reserved'
     appDescription = 'Tools usefull for everyday development.'
