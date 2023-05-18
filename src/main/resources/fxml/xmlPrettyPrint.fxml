@@ -1,0 +1,19 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<GridPane fx:controller="com.swehacker.devcompanion.xml.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" stylesheets="@main.css">
+  <padding>
+    <Insets bottom="10" left="10" right="10" top="10" />
+  </padding>
+  <VBox spacing="5.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+    <padding>
+      <Insets bottom="10" top="10" />
+    </padding>
+    <Label>XML String:</Label>
+    <TextArea fx:id="uglyXml" onKeyReleased="#onXmlPasted" wrapText="true" />
+    <Label>Pretty Print XML:</Label>
+    <TextArea fx:id="prettyXml" VBox.vgrow="ALWAYS" editable="false" wrapText="true" />
+  </VBox>
+</GridPane>
