@@ -42,7 +42,7 @@ task copyDependencies(type: Copy) {
     into "${buildDir}/libs"
 }
 
-task packageosx (type: Exec) {
+task packageosx(type: Exec) {
     dependsOn 'clean'
     dependsOn 'copyDependencies'
 
@@ -60,7 +60,7 @@ task packageosx (type: Exec) {
             "--copyright", "${copyright}"
 }
 
-task packagepkg (type: Exec) {
+task packagepkg(type: Exec) {
     dependsOn 'copyDependencies'
 
     commandLine "jpackage",
@@ -74,10 +74,11 @@ task packagepkg (type: Exec) {
             "--app-version", "${appVersion}",
             "--description", "${appDescription}",
             "--vendor", "${vendor}",
-            "--copyright", "${copyright}"
+            "--copyright", "${copyright}",
+            "--win-menu"
 }
 
-task packagedeb (type: Exec) {
+task packagedeb(type: Exec) {
     dependsOn 'copyDependencies'
 
     commandLine "jpackage",
@@ -91,10 +92,11 @@ task packagedeb (type: Exec) {
             "--app-version", "${appVersion}",
             "--description", "${appDescription}",
             "--vendor", "${vendor}",
-            "--copyright", "${copyright}"
+            "--copyright", "${copyright}",
+            "--win-menu"
 }
 
-task packageexe (type: Exec) {
+task packageexe(type: Exec) {
     dependsOn 'copyDependencies'
 
     commandLine "jpackage",
@@ -108,10 +110,11 @@ task packageexe (type: Exec) {
             "--app-version", "${appVersion}",
             "--description", "${appDescription}",
             "--vendor", "${vendor}",
-            "--copyright", "${copyright}"
+            "--copyright", "${copyright}",
+            "--win-menu"
 }
 
-task packagemsi (type: Exec) {
+task packagemsi(type: Exec) {
     dependsOn 'copyDependencies'
 
     commandLine "jpackage",
@@ -125,10 +128,11 @@ task packagemsi (type: Exec) {
             "--app-version", "${appVersion}",
             "--description", "${appDescription}",
             "--vendor", "${vendor}",
-            "--copyright", "${copyright}"
+            "--copyright", "${copyright}",
+            "--win-menu"
 }
 
-task packageappimage (type: Exec) {
+task packageappimage(type: Exec) {
     dependsOn 'copyDependencies'
 
     commandLine "jpackage",
