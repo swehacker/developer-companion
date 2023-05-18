@@ -30,14 +30,10 @@ public final class XmlUtil {
         }
     }
 
-    public static String prettyPrint(String xmlString, int indent, boolean skipDeclaration) {
-        try {
-            OutputFormat format = OutputFormat.createPrettyPrint();
-            format.setIndentSize(indent);
-            return convertToText(format, skipDeclaration, xmlString);
-        } catch (Exception e) {
-            throw new RuntimeException("Error occurs when pretty-printing xml:\n" + xmlString, e);
-        }
+    public static String prettyPrint(String xmlString, int indent, boolean skipDeclaration) throws DocumentException, IOException {
+        OutputFormat format = OutputFormat.createPrettyPrint();
+        format.setIndentSize(indent);
+        return convertToText(format, skipDeclaration, xmlString);
     }
 
 

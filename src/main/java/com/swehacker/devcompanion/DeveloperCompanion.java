@@ -9,27 +9,29 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.util.Objects;
+
 public class DeveloperCompanion extends Application {
 
-  public static void main(String[] args) {
-    Application.launch(args);
-  }
+    public static void main(String[] args) {
+        Application.launch(args);
+    }
 
-  @Override
-  public void start(Stage primaryStage) throws Exception {
-    StageStyle style = StageStyle.DECORATED;
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        StageStyle style = StageStyle.DECORATED;
 
-    Parent root = FXMLLoader.load(getClass().getResource("/fxml/main.fxml"));
-    primaryStage.setScene(new Scene(root, 800, 600));
-    primaryStage.setTitle("Developer Companion");
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/main.fxml")));
+        primaryStage.setScene(new Scene(root, 800, 600));
+        primaryStage.setTitle("Developer Companion");
 
-    Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
-    primaryStage.setX((screenBounds.getWidth() - primaryStage.getScene().getWidth()) / 2);
-    primaryStage.setY((screenBounds.getHeight() - primaryStage.getScene().getHeight()) / 2);
+        Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
+        primaryStage.setX((screenBounds.getWidth() - primaryStage.getScene().getWidth()) / 2);
+        primaryStage.setY((screenBounds.getHeight() - primaryStage.getScene().getHeight()) / 2);
 
-    primaryStage.setResizable(true);
-    primaryStage.initStyle(style);
+        primaryStage.setResizable(true);
+        primaryStage.initStyle(style);
 
-    primaryStage.show();
-  }
+        primaryStage.show();
+    }
 }
